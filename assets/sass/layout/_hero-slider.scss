@@ -1,0 +1,308 @@
+/*--------------------------------------------------------------
+3. content
+--------------------------------------------------------------*/
+
+// static-hero
+.hero-slider,
+.static-hero {
+	width: 100%;
+	height: 583px;
+	display: flex;
+	position: relative;
+	z-index: 0;
+
+	.gradient-overlay+.container {
+		position: relative;
+		z-index: 11;
+	}
+
+	.swiper-slide {
+		position: relative;
+		z-index: 11;
+	}
+
+	.slide-content {
+		@media(max-width:991px) {
+			text-align: center;
+			background: rgba(1, 1, 1, 0.5);
+			-webkit-backdrop-filter: blur(5px);
+			backdrop-filter: blur(5px);
+			padding: 40px;
+		}
+
+		@include media-query(575px) {
+			padding: 30px 20px;
+		}
+
+	}
+
+	.slide-sub-title {
+		margin-top: 10px;
+		margin-bottom: 15px;
+
+		span {
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 100%;
+			letter-spacing: 1.68px;
+			text-transform: uppercase;
+			@include text-primary;
+
+			@include media-query(767px) {
+				font-size: 20px;
+				line-height: 20px;
+			}
+		}
+	}
+
+	.slide-title {
+		max-width: 500px;
+		margin-bottom: 20px;
+
+		@include media-query(991px) {
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+
+		h2 {
+			margin: 0 0 15px;
+			font-size: 50px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 120%;
+			color: $white;
+
+			@include media-query(767px) {
+				font-size: 45px;
+				line-height: 55px;
+			}
+			@include media-query(575px) {
+				font-size: 40px;
+				line-height: 50px;
+			}
+
+			@include media-query(399px) {
+				font-size: 25px;
+				line-height: 35px;
+			}
+		
+
+			span {
+				font-style: italic;
+				display: block;
+			}
+		}
+	}
+
+	p {
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+		max-width: 420px;
+		margin-bottom: 30px;
+
+		@media(max-width:991px) {
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+	}
+
+	.slide-btns {
+		.theme-btn {
+			background: none;
+			border-color: rgba(109, 119, 130, 0.30);
+			color: $white;
+
+			&:hover {
+				background: $theme-primary-color;
+			}
+		}
+
+	}
+
+	.swiper-slide {
+		overflow: hidden;
+	}
+
+	.swiper-container,
+	.hero-container {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.slide-inner,
+	.hero-inner {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: left;
+	}
+
+	// slider controls
+	.swiper-button-prev,
+	.swiper-button-next {
+		background: transparentize(#c3c3c3, 0.8);
+		width: 60px;
+		height: 60px;
+		line-height: 56px;
+		border: 2px solid $white;
+		border-radius: 50%;
+		opacity: 0.7;
+		text-align: center;
+		@include transition-time(0.3s);
+		display: none;
+
+		&:hover {
+			opacity: 0.9;
+		}
+
+		@include media-query(767px) {
+			display: none;
+		}
+	}
+
+	.swiper-button-prev {
+		left: 25px;
+
+		&:before {
+			font-family: "themify";
+			content: "\e629";
+			font-size: 20px;
+			color: $white;
+		}
+	}
+
+	.swiper-button-next {
+		right: 25px;
+
+		&:before {
+			font-family: "themify";
+			content: "\e628";
+			font-size: 20px;
+			color: $white;
+		}
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		@include media-query(991px) {
+			display: none;
+		}
+	}
+
+	.swiper-pagination {
+		text-align: left;
+		left: 110px;
+
+		@media(max-width:991px){
+			text-align: center;
+			left: 0;
+		}
+	}
+
+	.swiper-pagination-bullet {
+		width: 12px;
+		height: 12px;
+		text-align: center;
+		line-height: 12px;
+		font-size: 12px;
+		color: #000;
+		opacity: 1;
+		background: $white;
+		text-align: left;
+	}
+
+	.swiper-pagination-bullet-active {
+		color: $theme-primary-color;
+		background: $theme-primary-color;
+		width: 12px;
+		height: 12px;
+		text-align: center;
+		line-height: 12px;
+	}
+
+	.swiper-container-horizontal>.swiper-pagination-bullets,
+	.swiper-pagination-custom,
+	.swiper-pagination-fraction {
+		bottom: 30px;
+	}
+
+	.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+		margin: 0 8px;
+	}
+
+	.hero-right-features {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 99;
+
+		@media(max-width:991px) {
+			display: none;
+		}
+
+		.hero-right-content {
+			position: relative;
+
+			.hero-right-text {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			h2 {
+				font-size: 57.911px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 69.493px;
+				letter-spacing: 1.158px;
+				text-transform: uppercase;
+				position: relative;
+				padding-left: 40px;
+				font-family: "Akshar", sans-serif;
+
+				span {
+					font-size: 22.21px;
+					font-style: normal;
+					font-weight: 300;
+					line-height: 30.214px;
+					letter-spacing: 6.16px;
+					text-transform: uppercase;
+					position: absolute;
+					left: 0;
+					transform: rotate(270deg);
+					top: 11px;
+				}
+			}
+
+			&:last-child {
+				h2 {
+					background: $gradient-bg;
+					padding: 10px;
+					padding-left: 40px;
+					margin-bottom: 0;
+					padding-bottom: 0;
+
+					span {
+						top: 20px;
+					}
+				}
+			}
+		}
+
+	}
+}

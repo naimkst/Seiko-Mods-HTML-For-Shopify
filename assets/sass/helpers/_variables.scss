@@ -1,0 +1,30 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// fonts
+$base-font-size: 14;
+$base-font: "Poppins", sans-serif;
+$heading-font: "Poppins", sans-serif;
+
+
+
+// color
+$dark-gray: #1A1A1C; //
+$body-color: #B7B7B9;
+$white: #fff;
+$light: #DDDDDD; //
+$black: #2F2F31;
+$small-black: #333;
+$cyan: #F9F9F9; //
+
+$theme-primary-color: #D64E38; //
+$body-bg-color: #fff;
+$section-bg-color: #F1E2CC; //
+$text-color: #B7B7B9; //
+$text-light-color: #6F6F6F; //
+$heading-color: $white;
+$border-color: #222224; //
+$border-color-s2: #F1E2CC; //
+$gradient-bg: linear-gradient(45deg, #D64E38 0%, #E16E5C 100%);
+$gradient-bg-hover: linear-gradient(45deg, #E16E5C 0%, #D64E38 100%);
