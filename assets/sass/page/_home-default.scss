@@ -308,11 +308,12 @@
 
         .tag {
             position: absolute;
-            left: 0;
-            top: 0;
+            left: 15px;
+            top: 18px;
             padding: 5px 10px;
-            background: #3C3C3C;
-            color: $white;
+            border: 1px solid #E16E5C;
+            color: #E16E5C;
+            border-radius: 8px;
 
             &.sale {
                 background-color: $theme-primary-color;
@@ -432,10 +433,10 @@
             span {
                 font-size: 14px;
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 600;
                 line-height: 16px;
                 letter-spacing: 0.2px;
-                color: $white;
+                @include text-primary;
             }
 
         }
@@ -549,10 +550,14 @@
             align-items: center;
 
             @media(max-width:991px) {
-               flex-wrap: wrap;
-               padding: 15px;
+                flex-wrap: wrap;
+                padding: 15px;
             }
 
+            @media(max-width:575px) {
+                justify-content: center;
+                text-align: center;
+              }
 
             h2 {
                 margin-bottom: 0;
@@ -561,11 +566,48 @@
             .show-right {
                 ul {
                     display: flex;
+                    padding-bottom: 0;
+                    border: 0;
+                    align-items: center;
+
+                    @media(max-width:575px) {
+                      justify-content: center;
+                      text-align: center;
+                    }
 
                     li {
                         &+li {
                             margin-left: 10px;
                         }
+                        @media(max-width:575px) {
+                            margin: 10px 0;
+                          }
+                    }
+
+                }
+
+                .nav-tabs .nav-link {
+                    padding: 0;
+                    border: 0;
+
+                    img {
+                        opacity: 0.5;
+                    }
+                }
+                .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active  {
+                    background: none;
+                    padding: 0;
+                    border: 0;
+
+                    img {
+                        opacity: 1;
+                    }
+                }
+                .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+                    border: 0;
+
+                    img {
+                        opacity: 1;
                     }
                 }
             }
@@ -578,6 +620,7 @@
             align-items: center;
             justify-content: flex-end;
             transition: all .3s;
+            position: relative;
 
             @media(max-width:991px) {
                 min-height: 350px;
@@ -675,6 +718,12 @@
                         color: $white;
                     }
                 }
+            }
+        }
+
+        #Grid {
+            .watch-style-item {
+                margin-bottom: 10px;
             }
         }
 
@@ -1251,7 +1300,7 @@
                 flex-basis: 100%;
                 margin-bottom: 20px;
             }
-    
+
         }
 
         input {
@@ -1281,10 +1330,10 @@
             color: $white;
             border-radius: 8px;
 
-            @media(max-width:350px){
+            @media(max-width:350px) {
                 position: relative;
                 margin-top: 20px;
-             }
+            }
 
             &:hover {
                 background: $gradient-bg-hover;
@@ -1302,8 +1351,8 @@
         margin-left: 20px;
 
         @media(max-width:767px) {
-           margin-left: 0;
-           justify-content: center;
+            margin-left: 0;
+            justify-content: center;
         }
 
         li {

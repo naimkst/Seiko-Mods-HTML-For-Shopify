@@ -217,10 +217,13 @@
             <div class="container">
                 <div class="breadcrumbs-wrapper">
                     <ul>
-                        <li>INFORMATION</li>
+                        <li class="active">INFORMATION</li>
                         <li>SHIPPING</li>
-                        <li class="active">PAYMENT</li>
+                        <li>PAYMENT</li>
                     </ul>
+                    <div class="share">
+                        <a href="#">Share <i class="fa fa-share" aria-hidden="true"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -232,88 +235,121 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-12">
-                        <div class="item-box shipping">
-                            <div class="shipt">
-                                <div class="box-title">
-                                    <h3>Contact</h3>
-                                    <a href="#">Change</a>
-                                </div>
-                                <p>krishnagohil85@gmail.com</p>
-                            </div>
-                            <div class="shipt">
-                                <div class="box-title">
-                                    <h3>Ship to</h3>
-                                    <a href="#">Change</a>
-                                </div>
-                                <p>82,ranuja dham soc.punagam road surat.near sita agar chowk, 395010 Surat GJ, India
-                                </p>
-                            </div>
-                            <div class="shipt">
-                                <div class="box-title">
-                                    <h3>Shipping method</h3>
-                                </div>
-                                <p>Standard shipping . Free</p>
-                            </div>
-                        </div>
-                        <div class="item-box paymeny-summary-wrap">
+                        <div class="item-box">
                             <div class="box-title">
-                                <h3>Payment</h3>
-                                <p>All transactions are secure and encrypted.</p>
-                            </div>
-                            <div class="payment-area">
-                                <ul>
-                                    <li>
-                                        <input id="payment-list-1" type="radio" name="payment-list-1" checked="">
-                                        <label for="payment-list-1">Credit card</label>
-                                        <span><img src="assets/payments.svg" alt=""></span>
-                                    </li>
-                                </ul>
-                                <div class="form-field">
-                                    <input type="text" placeholder="Card number">
-                                    <i><img src="assets/lock.svg" alt=""></i>
-                                </div>
-                                <div class="form-field">
-                                    <input type="text" placeholder="Name on card">
-                                </div>
-                                <div class="form-field">
-                                    <input type="date" placeholder="Expiry date (mm/yy)">
-                                </div>
-                                <div class="form-field">
-                                    <input type="text" placeholder="Security code">
-                                    <i><img src="assets/asking.svg" alt=""></i>
-                                </div>
-
-                                <ul class="mt-5">
-                                    <li>
-                                        <input id="payment-list-2" type="radio" name="payment-list-1" >
-                                        <label for="payment-list-2"><img src="assets/payPal.svg" alt=""></label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item-box paymeny-summary-wrap">
-                            <div class="box-title">
-                                <h3>Payment</h3>
-                                <p>All transactions are secure and encrypted.</p>
-                            </div>
-                            <div class="payment-area">
-                                <ul>
-                                    <li>
-                                        <input id="payment-list-3" type="radio" name="payment-list-2" checked="">
-                                        <label for="payment-list-3">Same as shipping address</label>
-                                    </li>
-                                </ul>
-                                <ul class="mt-5">
-                                    <li>
-                                        <input id="payment-list-4" type="radio" name="payment-list-2" >
-                                        <label for="payment-list-4">Use a different billing address</label>
-                                    </li>
-                                </ul>
+                                <h3>Contact</h3>
+                                <p>Have an account? <a href="#">log in</a></p>
                             </div>
                             <div class="checkout-wrap">
                                 <div class="billing-adress">
+                                    <div class="contact-form-area">
+                                        <form method="post">
+                                            <div class="billing-1">
+                                                <div class="form-field">
+                                                    <input type="text" class="form-control" name="name" id="name"
+                                                        placeholder="First Name*">
+                                                </div>
+                                            </div>
+                                            <div class="dif-add mb-0">
+                                                <input id="news" type="checkbox">
+                                                <label class="fontsize" for="news">Email me with news and offers</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="box-title">
+                                <h3>Shipping address</h3>
+                                <p>This store does not ship to Europe. Change country by <a href="#">clicking here </a>
+                                </p>
+                            </div>
+                            <div class="checkout-wrap">
+                                <div class="billing-adress">
+                                    <div class="contact-form-area">
+                                        <form method="post">
+                                            <div class="billing-1">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="form-field">
+                                                            <label>Country/Region</label>
+                                                            <input type="text" class="form-control" name="cont"
+                                                                id="cont" placeholder="India">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-field">
+                                                            <label for="#">First name (optional)</label>
+                                                            <input type="text" class="form-control" name="name"
+                                                                id="name" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-field">
+                                                            <label for="#">Last name</label>
+                                                            <input type="text" class="form-control" name="lname"
+                                                                id="lname" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-field">
+                                                            <label for="#">Address</label>
+                                                            <input type="text" class="form-control" name="Address"
+                                                                id="Address" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-field">
+                                                            <label for="#">Appartment,suite,etc. (optional)</label>
+                                                            <input type="text" class="form-control" name="Appartment"
+                                                                id="Appartment" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-12">
+                                                        <div class="form-field">
+                                                            <label for="#">City</label>
+                                                            <input type="text" class="form-control" name="City"
+                                                                id="City" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-12">
+                                                        <div class="form-field">
+                                                            <label for="#">State</label>
+                                                            <select name="service" id="service">
+                                                                <option value="">Country</option>
+                                                                <option value="">Usa</option>
+                                                                <option value="">Uk</option>
+                                                                <option value="">germany</option>
+                                                                <option value="">Canada</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-12">
+                                                        <label for="#">Pincode</label>
+                                                        <div class="form-field">
+                                                            <input type="text" class="form-control" name="Postcode/zip"
+                                                                id="Postcode/zip" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-field">
+                                                            <label for="#">Phone</label>
+                                                            <input type="text" class="form-control" name="phone"
+                                                                id="phone" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="dif-add mb-0">
+                                                    <input id="save" type="checkbox">
+                                                    <label class="fontsize" for="save">Save this information for next
+                                                        time </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                     <div class="next-btn">
-                                        <button class="theme-btn">Pay Now</button>
+                                        <button class="theme-btn">Continue to shipping</button>
                                     </div>
                                 </div>
                             </div>
@@ -335,7 +371,7 @@
                                     </div>
                                     <div class="cart-right">
                                         <div class="price">
-                                            <span class="price">$2347</span>
+                                            <span class="price">$399</span>
                                         </div>
                                     </div>
                                 </div>

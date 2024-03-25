@@ -32,6 +32,48 @@
             }
         }
 
+        .left-side  {
+            overflow-x: hidden;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                width: 6px;
+                display: none;
+            }
+    
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            }
+    
+            &::-webkit-scrollbar-thumb {
+                background-color: $dark-gray;
+                outline: 1px solid #666;
+            }
+
+            @media(min-width:991px) {
+                max-height: 525px;
+            }
+
+            @media(max-width:1399px) {
+                max-height: 490px;
+            }
+            @media(max-width:991px) {
+                max-height: 530px;
+            }
+
+            @media(max-width:767px) {
+                max-height: 465px;
+            }
+
+            @media(max-width:575px) {
+                max-height: 400px;
+            }
+
+            @media(max-width:375px) {
+                max-height: 280px;
+            }
+        }
+
         .slider-for {
             text-align: center;
 

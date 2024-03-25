@@ -580,62 +580,120 @@
                         <h2>WAtch styles</h2>
 
                         <div class="show-right">
-                            <ul>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li>Browse watch by catagories ( select the view )</li>
-                                <li>
-                                    <a href="#"><img src="assets/gridview.svg" alt=""></a>
-                                    <a href="#"><img src="assets/listview.svg" alt=""></a>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="Grid-tab" data-bs-toggle="tab"
+                                        href="#Grid" role="tab" aria-controls="Grid"
+                                        aria-selected="true"><img src="assets/gridview.svg" alt=""></a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="List-tab" data-bs-toggle="tab" href="#List" role="tab"
+                                        aria-controls="List" aria-selected="false"><img src="assets/listview.svg"
+                                            alt=""></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="watch-active owl-carousel">
-                        <div class="watch-style-item wow fadeInUp" data-wow-duration="1000ms">
-                            <div class="watch-style-text">
-                                <h2>Limited Edition</h2>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="List">
+                            <div class="watch-active owl-carousel">
+                                <div class="watch-style-item wow fadeInUp" data-wow-duration="1000ms">
+                                    <div class="watch-style-text">
+                                        <h2>Limited Edition</h2>
+                                    </div>
+                                    <div class="watch-style-img">
+                                        <img src="assets/watch-style.png" alt="">
+                                    </div>
+                                    <a href="#" class="bottom-btn">123 Watches</a>
+                                </div>
+                                <div class="watch-style-item wow fadeInUp" data-wow-duration="1200ms">
+                                    <div class="watch-style-text">
+                                        <h2>Quartz</h2>
+                                    </div>
+                                    <div class="watch-style-img">
+                                        <img src="assets/watch-style.png" alt="">
+                                    </div>
+                                    <a href="#" class="bottom-btn">128 Watches</a>
+                                </div>
+                                <div class="watch-style-item wow fadeInUp" data-wow-duration="1400ms">
+                                    <span class="tag sale">NEW</span>
+                                    <div class="watch-style-text">
+                                        <h2>Swiss</h2>
+                                    </div>
+                                    <div class="watch-style-img">
+                                        <img src="assets/watch-style.png" alt="">
+                                    </div>
+                                    <a href="#" class="bottom-btn">128 Watches</a>
+                                </div>
+                                <div class="watch-style-item wow fadeInUp" data-wow-duration="1600ms">
+                                    <div class="watch-style-text">
+                                        <h2>Sport</h2>
+                                    </div>
+                                    <div class="watch-style-img">
+                                        <img src="assets/watch-style.png" alt="">
+                                    </div>
+                                    <a href="#" class="bottom-btn">128 Watches</a>
+                                </div>
+                                <div class="watch-style-item wow fadeInUp" data-wow-duration="1800ms">
+                                    <div class="watch-style-text">
+                                        <h2>Limited
+                                            Casual</h2>
+                                    </div>
+                                    <div class="watch-style-img">
+                                        <img src="assets/watch-style.png" alt="">
+                                    </div>
+                                    <a href="#" class="bottom-btn">128 Watches</a>
+                                </div>
                             </div>
-                            <div class="watch-style-img">
-                                <img src="assets/watch-style.png" alt="">
-                            </div>
-                            <a href="#" class="bottom-btn">123 Watches</a>
                         </div>
-                        <div class="watch-style-item wow fadeInUp" data-wow-duration="1200ms">
-                            <div class="watch-style-text">
-                                <h2>Quartz</h2>
+                        <div role="tabpanel" class="tab-pane" id="Grid">
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6 col-12">
+                                    <div class="watch-style-item">
+                                        <div class="watch-style-text">
+                                            <h2>Limited Edition</h2>
+                                        </div>
+                                        <div class="watch-style-img">
+                                            <img src="assets/watch-style.png" alt="">
+                                        </div>
+                                        <a href="#" class="bottom-btn">123 Watches</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 col-12">
+                                    <div class="watch-style-item">
+                                        <div class="watch-style-text">
+                                            <h2>Quartz</h2>
+                                        </div>
+                                        <div class="watch-style-img">
+                                            <img src="assets/watch-style.png" alt="">
+                                        </div>
+                                        <a href="#" class="bottom-btn">123 Watches</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 col-12">
+                                    <div class="watch-style-item">
+                                        <div class="watch-style-text">
+                                            <h2>Swiss</h2>
+                                        </div>
+                                        <div class="watch-style-img">
+                                            <img src="assets/watch-style.png" alt="">
+                                        </div>
+                                        <a href="#" class="bottom-btn">123 Watches</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 col-12">
+                                    <div class="watch-style-item">
+                                        <div class="watch-style-text">
+                                            <h2>Sport</h2>
+                                        </div>
+                                        <div class="watch-style-img">
+                                            <img src="assets/watch-style.png" alt="">
+                                        </div>
+                                        <a href="#" class="bottom-btn">123 Watches</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="watch-style-img">
-                                <img src="assets/watch-style.png" alt="">
-                            </div>
-                            <a href="#" class="bottom-btn">128 Watches</a>
-                        </div>
-                        <div class="watch-style-item wow fadeInUp" data-wow-duration="1400ms">
-                            <span class="tag sale">NEW</span>
-                            <div class="watch-style-text">
-                                <h2>Swiss</h2>
-                            </div>
-                            <div class="watch-style-img">
-                                <img src="assets/watch-style.png" alt="">
-                            </div>
-                            <a href="#" class="bottom-btn">128 Watches</a>
-                        </div>
-                        <div class="watch-style-item wow fadeInUp" data-wow-duration="1600ms">
-                            <div class="watch-style-text">
-                                <h2>Sport</h2>
-                            </div>
-                            <div class="watch-style-img">
-                                <img src="assets/watch-style.png" alt="">
-                            </div>
-                            <a href="#" class="bottom-btn">128 Watches</a>
-                        </div>
-                        <div class="watch-style-item wow fadeInUp" data-wow-duration="1800ms">
-                            <div class="watch-style-text">
-                                <h2>Limited
-                                    Casual</h2>
-                            </div>
-                            <div class="watch-style-img">
-                                <img src="assets/watch-style.png" alt="">
-                            </div>
-                            <a href="#" class="bottom-btn">128 Watches</a>
                         </div>
                     </div>
                 </div>
@@ -903,7 +961,8 @@
         </section>
 
         <!-- start of footer-section -->
-        <footer class="footer-section" style="background: url(./assets/footer-bg.jpg) no-repeat center center;  background-size: cover; background-attachment: fixed;">
+        <footer class="footer-section"
+            style="background: url(./assets/footer-bg.jpg) no-repeat center center;  background-size: cover; background-attachment: fixed;">
             <div class="footer-top">
                 <div class="container">
                     <div class="reason-wrap-bottom">
@@ -985,7 +1044,8 @@
                                         <input type="text" placeholder="email ID">
                                         <button type="button"><i class="ti-arrow-right"></i></button>
                                     </form>
-                                    <p>Subscribe 10 our newsletter and keep up with the lastest Watch department products and offers</p>
+                                    <p>Subscribe 10 our newsletter and keep up with the lastest Watch department
+                                        products and offers</p>
                                 </div>
 
                                 <div class="widget-title">
